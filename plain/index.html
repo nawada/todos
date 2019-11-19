@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO list plain</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <nav class="light-blue lighten-1">
+        <div class="nav-wrapper container">
+            <a href="#">TODO LIST</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="section">
+                        <div class="row">
+                            <div class="input-field col">
+                                <input type="text" class="validate" id="todo-item">
+                                <label for="todo-item">Todo Item</label>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="waves-effect waves-light btn-large">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Done</th>
+                                <th>Content</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tbody">
+                            <tr>
+                                <td><input type="checkbox" name="done"></td>
+                                <td><input type="text" style="display: none;" value="hogehoge">hogehoge</td>
+                                <td><button class="btn-small waves-effect">DELETE</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
